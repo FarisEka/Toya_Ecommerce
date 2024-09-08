@@ -1,0 +1,13 @@
+.summary-kategori{
+    background-color: darkgreen;
+    border-radius: 10px;
+}
+
+.summary-produk{
+    background-color: darkblue;
+    border-radius: 10px;
+}
+
+.text-decoration:hover{
+    color: blue;
+}
