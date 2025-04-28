@@ -11,3 +11,7 @@
 .text-decoration:hover{
     color: blue;
 }
+
+form div{
+    margin-bottom: 10px;
+}
