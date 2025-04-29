@@ -56,3 +56,9 @@
 .container-subs{
     background-color: rgba(0, 0, 0, 0.7);
 }
+
+.banner-produk{
+    height: 30vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('image/banner.png');
+    background-position: 50% 30%;
+}
