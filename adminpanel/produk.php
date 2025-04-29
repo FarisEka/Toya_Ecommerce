@@ -117,14 +117,14 @@ function generateRandomString($length = 10) {
                     <?php
                 } else {
                     if ($nama_file!= '') {
-                        if ($image_size > 500000) {
+                        if ($image_size > 5000000) {
                             ?>
                             <div class="alert alert-danger mt-3" role="alert">
-                                File tidak boleh lebih dari 500kb
+                                File tidak boleh lebih dari 5mb
                             </div>
                             <?php
                         } else {
-                            if ($imagefiletype != 'jpg' && $imagefiletype != 'png' || $imagefiletype != 'jpeg') {
+                            if ($imagefiletype != 'jpg' && $imagefiletype != 'png' && $imagefiletype != 'jpeg') {
                                 ?>
                                 <div class="alert alert-danger mt-3" role="alert">
                                     File hanya JPG/PNG/JPEG

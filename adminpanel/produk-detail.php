@@ -131,14 +131,14 @@ function generateRandomString($length = 10)
                     $queryupdate = mysqli_query($koneksi, "UPDATE produk SET kategori_id='$kategori',nama='$nama',harga='$harga',detail='$detail',ketersediaan_stok='$ketersediaan_stok' WHERE id='$id' ");
 
                     if ($nama_file != '') {
-                        if ($image_size > 500000) {
+                        if ($image_size > 5000000) {
                             ?>
                             <div class="alert alert-danger mt-3" role="alert">
-                                File tidak boleh lebih dari 500kb
+                                File tidak boleh lebih dari 5 mb
                             </div>
                             <?php
                         } else {
-                            if ($imagefiletype != 'jpg' && $imagefiletype != 'png' || $imagefiletype != 'jpeg') {
+                            if ($imagefiletype != 'jpg' && $imagefiletype != 'png' && $imagefiletype != 'jpeg') {
                                 ?>
                                 <div class="alert alert-danger mt-3" role="alert">
                                     File hanya JPG/PNG/JPEG
@@ -147,14 +147,14 @@ function generateRandomString($length = 10)
                             } else {
                                 move_uploaded_file($_FILES["foto"]["tmp_name"], $target_dir . $newname);
 
-                                $queryupdate = mysqli_query($koneksi, "UPDATE produk SET foto='$new_name' WHERE id='$id'");
+                                $queryupdate = mysqli_query($koneksi, "UPDATE produk SET foto='$newname' WHERE id='$id'");
 
                                 if ($queryupdate) {
                                     ?>
                                     <div class="alert alert-success" role="alert">
                                         Produk Berhasil Terupdate
                                     </div>
-                                    <meta http-equiv="refresh" content="5; url=produk.php" />
+                                    <meta http-equiv="refresh" content="1; url=produk.php" />
                                     <?php
                                 } else {
                                     echo mysqli_error();

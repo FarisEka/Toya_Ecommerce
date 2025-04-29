@@ -12,6 +12,12 @@
     color: blue;
 }
 
-form div{
-    margin-bottom: 10px;
+.bannerku{
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../image/banner.png');
+}
+
+.summary-banner{
+    background-color: rgb(177, 26, 137);
+    border-radius: 10px;
 }

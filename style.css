@@ -1,0 +1,58 @@
+.bannerku{
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('image/banner.png');
+}
+
+.best-seller{
+    height: 250px;
+}
+
+.kategori-sepatu{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('image/sepatu.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.kategori-tas{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('image/tas.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.kategori-jaket{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('image/jaket.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.no-decoration {
+    text-decoration: none;
+    color: white;
+}
+
+.no-decoration:hover{
+    color: burlywood;   
+}
+
+.warnaku {
+    background-color: rgb(200, 160, 58);
+}
+
+.text-harga {
+    font-size: 20px;
+}
+
+.image-box{
+    height: 250px;
+}
+
+.image-box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container-subs{
+    background-color: rgba(0, 0, 0, 0.7);
+}
