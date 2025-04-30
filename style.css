@@ -62,3 +62,10 @@
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('image/banner.png');
     background-position: 50% 30%;
 }
+
+.produk-terkait-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
